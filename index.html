@@ -1,16 +1,35 @@
 <!doctype html>
 <html>
 <head>
-  <title>WEB1 - HTML</title>
+  <title>TUFS Question</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" meia="all">
 </head>
-<body>
-  <h1><a href="index.html">TUFS Question</a></h1>
-  <ol>
-    <li><a href="1.html">受験生</a></li>
-    <li><a href="2.html">在校生</a></li>
-    <li><a href="3.html">TUFS Questionとは</a></li>
-  </ol>
+<header>
+  <h1><a href = "index.html">TUFS Question!</a></h1>
+</header>
+ <body>
+   <div class="menubar" id="grid">
+   <ul>
+      <li><a href="1.html" id="grid">受験生</a>
+         <ul>
+           <li><a href="#">受験</a></li>
+           <li><a href="#">留学</a></li>
+           <li><a href="#">生活</a></li>
+           <li><a href="#">部活</a></li>
+         </ul>
+      </li>
+      <li><a href="2.html" id="grid">在校生</a>
+         <ul>
+           <li><a href="#">学校関連</a></li>
+           <li><a href="#">その他</a></li>
+         </ul>
+       </li>
+      <li><a href="3.html">TUFS Questionとは</a></li>
+      <li><a href="about.html">About</a></li>
+   </ul>
+</div>
+ <div id="article" style="text-align:center;">
   <p>
     <strong>TUFS Today! <br><br>
     <iframe width="560" height="315"
@@ -39,6 +58,9 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
    </p>
+ </div>
+</div>
+
    <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
