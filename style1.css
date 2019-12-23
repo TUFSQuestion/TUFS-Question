@@ -1,0 +1,141 @@
+div#wrap { background:#ddd;}
+  header#header { background:#fdd;}
+  section#container { background:#ddf;}
+      div.content { background:#eee;
+      border: solid 1px black;}
+      aside#aside { background:#fef;
+      border: solid 1px black;}
+  footer#footer { background:#ffe;
+  border: solid 1px black;}
+
+  div#warp, header#header, nav#nav,
+  div.content, aside#aside,
+  footer#footer {padding:10px;}
+
+  section#container {
+    padding:20px;
+  }
+
+  nav#nav{
+    border: solid 1px black;
+  }
+
+  nav#nav ul { margin:0; padding:0; list-style:none;}
+  nav#nav ul li { background:#eee; padding:10px;
+  display:inline-block;
+padding-right:30px;
+padding-left:30px;}
+
+  div.content { width:70%; float:right; }
+  aside#aside { width:20%; float:left; }
+
+  section#container::after { content:""; display:block;
+  clear:both; }
+  nav#nav li ul {
+    width:0px;
+  }
+
+  .menubar{
+  border:none;
+  border:0px;
+  margin:0px;
+  padding:0px;
+  font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+  font-size:14px;
+  font-weight:bold;
+  }
+
+  .menubar ul{
+  background: rgb(109,109,109);
+  height:50px;
+  list-style:none;
+  margin:0;
+  padding:0;
+  }
+
+  .menubar li{
+  float:left;
+  padding:0px;
+  }
+
+  .menubar li a{
+  background: rgb(109,109,109);
+  color:#cccccc;
+  display:block;
+  font-weight:normal;
+  line-height:50px;
+  margin:0px;
+  padding:0px 25px;
+  text-align:center;
+  text-decoration:none;
+  }
+
+  .menubar li a:hover, .menubar ul li:hover a{
+  background: rgb(71,71,71);
+  color:#FFFFFF;
+  text-decoration:none;
+  }
+
+  .menubar li ul{
+  background: rgb(109,109,109);
+  display:none;
+  height:auto;
+  padding:0px;
+  margin:0px;
+  border:0px;
+  position:absolute;
+  width:200px;
+  z-index:200;
+  /*top:1em;
+  /*left:0;*/
+  }
+
+  .menubar li:hover ul{
+  display:block;
+  }
+
+  .menubar li li {
+  background: rgb(109,109,109);
+  display:block;
+  float:left;
+  margin:0px;
+  padding:0px;
+  width:200px;
+  }
+
+  .menubar li:hover li a{
+  background:none;
+  }
+
+  .menubar li ul a{
+  display:block;
+  height:50px;
+  font-size:12px;
+  font-style:normal;
+  margin:0px;
+  padding:0px 10px 0px 15px;
+  text-align:left;
+  }
+
+  .menubar li ul a:hover, .menubar li ul li:hover a{
+  background: rgb(71,71,71);
+  border:0px;
+  color:#ffffff;
+  text-decoration:none;
+  }
+
+  .menubar p{
+  clear:left;
+  }
+
+
+  @media screen and (max-width: 910px) {
+  div#wrap { width:calc(100% - 20px); }
+  div.content { width:calc(100% - 20px - 240px - 20px); }
+  aside#aside { width:220px; }
+  }
+
+  @media screen and (max-width: 650px) {
+  div.content,
+  aside#aside { width:calc(100% - 20px); float:none; }
+  }
